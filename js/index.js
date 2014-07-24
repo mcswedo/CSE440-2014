@@ -1,8 +1,8 @@
 (function() {
 
   schedule = [
-    ['Lesson 1 - Github and Unity',	20, new Date('2014-09-25T23:59:59'), '<a href="startup.html">Git</a>'],
-    ['Lesson 2 - Developing in Unity, Part 1', 	20, new Date('2014-09-30T23:59:59'), '<a href="Unity-1.html">Unity-1</a>'],
+    ['Lesson 1 - GitHub and Unity',	20, new Date('2014-09-25T23:59:59'), '<a href="Setup.html">GitHub and Unity</a>'],
+    ['Lesson 2 - Developing in Unity, Part 1', 	20, new Date('2014-09-30T23:59:59'), '<a href="Unity-1.html">Developing in Unity, Part 1</a>'],
   ];
 
   app.onload = function() {
