@@ -1,12 +1,12 @@
 (function() {
 
   schedule = [
-    ['Lesson 1 - GitHub and Unity',	20, new Date('2014-09-25T23:59:59'), '<a href="Setup.html">GitHub and Unity</a>'],
-    ['Lesson 2 - Developing in Unity', 	20, new Date('2014-09-30T23:59:59'), '<a href="Unity-1.html">Developing in Unity</a>'],
-    ['Lesson 3 - Tutorials in Unity', 20, new Date('2014-10-14T23:59:59'), '<a href="Tutorials.html">Tutorials In Unity</a>'],
-    ['Lesson 4 - The Game Design Document', 20, new Date('2014-10-16T23:59:59'), '<a href="GDD.html">The Game Design Document</a>'],
-    ['Lesson 5 - Your Game Pitch', 20, new Date('2014-10-21T23:59:59'), '<a href="Pitch.html">Your Game Pitch</a>'],
-    ['Lesson 6 - Game Design Project', 20, new Date('2014-11-25T23:59:59'), '<a href="Project.html">Game Design Project</a>']
+    ['Lesson 1 - Introductions to GitHub and Unity',	20, new Date('2014-09-30T23:59:59'), '<a href="Introduction.html">Week 1: Introductions to GitHub and Unity</a>'],
+    ['Lesson 2 - Tutorials in Unity', 	20, new Date('2014-10-16T23:59:59'), '<a href="Tutorials.html">Weeks 2 & 3: Tutorials in Unity</a>'],
+    ['Lesson 3 - Hello World - Input & Movement, Textures & Assets', 20, new Date('2014-10-23T23:59:59'), '<a href="HelloWorld.html">Week 4: Hello World - Input & Movement, Textures & Assets</a>'],
+    ['Lesson 4 - Creating a Game World', 20, new Date('2014-10-30T23:59:59'), '<a href="GameWorld.html">Week 5: Creating a Game World</a>'],
+    ['Lesson 5 - Physics, Collisions, Triggers, and Using Them', 20, new Date('2014-11-07T23:59:59'), '<a href="Physics.html">Week 6: Physics, Collisions, Triggers, and Using Them</a>'],
+    ['Lesson 6 - Audio & GUI', 20, new Date('2014-11-14T23:59:59'), '<a href="Audio-GUI.html">Week 7: Audio & GUI</a>']
   ];
 
   app.onload = function() {
