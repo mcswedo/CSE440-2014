@@ -5,3 +5,56 @@ title: Creating a Game World
 ---
 
 <h1> Creating a Game World  </h1>
+
+<p>
+Create a new Unity Project. Do not import any packages, and setup defaults for your chosen path - 2D or 3D.
+</p>
+
+<p>
+This is a project in level design - creating game worlds for your characters, objects, etc. to inhabit. Level design is often overlooked but is crucial to your game being fun or interesting to a player. Every person begins level design in a different way. I personally like sketching out what levels might look like, how rooms flow together... et cetera. Others prefer a modular approach where they create the very first thing the player sees and then build their worlds off of that. You will continue to use this project for the next three tutorials, and perhaps for your project itself, so begin the thought process or experimentation phase for the core concepts of the game you want to design for the class. Discuss these with your fellow classmates and with Michael if you would like additional feedback about your ideas.
+</p>
+
+<p>
+Remember - there is no improper way to design a game! Your goal is to create something fun for your users. If you have fun creating your game and testing it, odds are your players will as well!
+</p>
+
+<h2>
+<b>For the 3D Path:</b>
+</h2>
+
+<p>
+Delete the Main Camera Game Object in the Hierarchy. Go to Assets -> Import Package -> Character Controller to import a simple first- or third-person character controller that will allow you to move through your game world. Spend some time looking through the Character Controller prefab to understand what the Mouse Look, Character Motor, and Input Controller scripts do. 
+
+Create a scene with a directional light and, using either the Terrain Tool or geometric primitives, create a simple game world to move through with your character.
+</p>
+
+<p>
+Experiment with lighting the terrain using Point and/or Spot lights, and texturing it as well. You may use textures found online, at sites such as <a href="www.lostandtaken.com">Lost and Taken</a>, or any other free, open source textures. You may not download textures or any other assets from the Unity Asset Store. Textures must be in a power of two resolution. GIMP or other image editing software can be used to create your own textures as well, and I strongly encourage this.
+</p>
+
+<h2>
+<b>For the 2D Path:</b>
+</h2>
+
+<p>
+PREFACE: The following instructions focus primarily on creating a 2D Platformer. If you would prefer to create a different style of 2D game world, please discuss this with Michael either in person or through email.
+</p>
+
+<p>
+Create a scene and modify the Main Camera to have an Orthographic size of 3.6, and be placed at coordinates (6.4x, 3.6y, -10z). These settings allow for an easy-to-setup Scene view, optimize your game for the resolution 1280x720, and make it so that when you are editing the position of your sprites, all srites of size 100x100 will fit exactly 1 unit on the screen. To make sprites of different sizes fit, either discuss it with Michael so that a resize of the sprite can be done using GIMP or Photoshop or as a temporary measure, change the "Pixels to Units" setting of the Sprite to the horizontal resolution. Square sprites are preferred, but not required - they may appear stretched, however.
+</p>
+
+<p>
+Either create or utilize your own sprites or using these pre-created sprites (<a href="img/robot.png">Player</a>, <a href="img/background.png">Background</a>, <a href="img/foreground.png">Foreground</a>), create a room, or several, that illustrates how a 2D platformer's game world might be set up. All sprites will need to have their "Pivot" set to the Bottom Left corner of the sprite for ease of use.
+</p>
+
+<p>
+Utilize the script for input that moved the sprite in the last lesson so that you can move around your game world. If necessary, attach the Main Camera as a child to your Player character so that you can move through and see more than a single "room" of the game world you create. We will make the game feel more like a "game" in the next lesson, where we explore physics, colliders, and other components of objects.
+</p>
+
+<h2>Resources</h2>
+
+<p>
+<a href="http://docs.unity3d.com/Manual/script-Terrain.html">Unity Terrain Engine System Overview</a><br>
+<a href="http://docs.unity3d.com/ScriptReference/">Unity Script Reference</a> <br>
+</p>
