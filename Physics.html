@@ -1,7 +1,46 @@
 ---
 layout: default
 id: git
-title: Physics, Collisions, Triggers, and Using Them 
+title: Physics, Collisions, and Triggers
 ---
 
-<h1>Physics, Collisions, Triggers, and Using Them </h1>
+<h1>Physics, Collisions, and Triggers </h1>
+
+<p>
+This assignment builds upon the Game World assignment completed last week. Begin by opening your Game World project. This project will deal with elements of physics, collision with objects, and "Triggers," which are areas in space or code that literally trigger something to happen.
+</p>
+
+<p>
+Note that Tags are the best way to find and utilize other game objects and their components. If your desired experiment wants to affect some other game object besides the one your script is placed on, Tags are the best method of doing so.
+</p>
+
+<p>
+Additionally, note that any object with a Rigidbody or a Rigidbody 2D will be affected by a global Force of Gravity setting that is found in the Edit -> Project Settings -> Physics (or Physics 2D) menu. If you do not want your game object to be affected by gravity, check the "Is Kinematic" box in the Rigidbody's component settings in the Inspector.
+</p>
+
+<h2>For the 3D Path: </h2>
+
+<p>
+Because the Terrain editor and the FPS/TPS Character Controller naturally work well with physics, experiment with placing more geometry in your world using geometric primitives, like the Cube and Sphere, and seeing how your character interacts with these. Experiment with "Rigidbody" components, and how the player can interact with and manipulate physics objects. You can use them as Triggers by creating a simple script to attach to them that can detect when the player collides with them using OnCollider[Enter, Stay, Exit], and perhaps change the texture of the object, apply physics to the rigidbody of the object (like, for instance, kicking a ball) or something else in the world. What your colliders do is up to your discretion - seek knowledge and be creative.
+</p>
+
+<p>
+Additionally, utilize "invisible" triggers to modify something in your game world, as well. These can be created in the same way as the physical, collider-based triggers, but the way to achieve "invisible" triggers is the remove the Renderer component from the created game object, and checking the "Is Trigger" box in the inspector. This will allow you to use the OnTrigger[Enter, Stay, Exit] functions in script. 
+</p>
+
+<h2>For the 2D Path: </h2>
+
+<p>
+To use physics in 2D, you need to reconfigure your player character to have a Rigidbody 2D component, and use that rigidbody to move the character. This will require a new Input Handling script. Having three inputs - left movement, right movement, and jumping - are required to understand how to utilize and modify your player character and their behavior with physics objects in the world. This will require the use of the "FixedUpdate" function, instead of the Update function, due to the nature and best practices of dealing with Rigidbodies.
+</p>
+
+<p>
+Once your new input handling script is functional, that Rigidbody 2D of the player can interact with any and all game objects that have a Collider 2D attached as a component. Experiment with different kinds of colliders (Polygon, Box, Circle) to see how they interact, and additionally experiment with invisible triggers (which are created in the same way as they are in 3D - a geometric primitive with the renderer removed, and a Collider 2D attached with the Is Trigger box checked) to affect the game objects in some manner.
+</p>
+
+<h2>Resources</h2>
+<a href="http://docs.unity3d.com/ScriptReference/Collider.html">Collider documentation</a> <br>
+<a href="http://docs.unity3d.com/ScriptReference/Collider2D.html">Collider 2D documentation</a> <br>
+<a href="http://docs.unity3d.com/ScriptReference/Rigidbody.html">Rigidbody documentation</a> <br>
+<a href="http://docs.unity3d.com/ScriptReference/Rigidbody2D.html">Rigidbody 2D documentation</a> <br>
+<a href="http://docs.unity3d.com/Manual/Tags.html">Tags in Unity</a> <br>
